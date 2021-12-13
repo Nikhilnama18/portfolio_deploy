@@ -19,7 +19,7 @@ export default function Projects() {
     const getRepoData = () => {
       fetch("/profile.json")
         .then(result => {
-          console.log("/profile.json :: ",result)
+          console.log("/profile.json :: ", result);
           if (result.ok) {
             return result.json();
           }
